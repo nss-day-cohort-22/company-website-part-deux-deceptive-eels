@@ -1,47 +1,8 @@
-/*Modal Background 
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 60%;
-    height: 60%;
-    overflow: auto; 
-    background-color: rgb(0,0,0,0.4); 
-    
-}
-
-.module-content {
-    background-color:black; 
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
-}
-
-
-
-.close {
-    color: #aaa; 
-    float: right; 
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover, 
-.close:focus {
-    color: black; 
-    text-decoration: none; 
-    cursor: pointer; 
-}
-
-*/
 
 /* Images */
 .card-img {
-    border: 2px solid rgba(0, 0, 0, 0.692); 
+    border: 1px solid rgba(0, 0, 0, 0.692); 
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
