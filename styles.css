@@ -1,0 +1,36 @@
+body {
+  position: relative;
+  background: url("../imgs/sunset2.jpg");
+  background-repeat:no-repeat;
+  background-size:100% 100vh;
+}
+
+#warning{
+position: fixed;
+bottom: 25;
+right: 25;
+}
+
+#accessory{
+  position: fixed;
+  top: 25;
+  right: 25;
+  }
+
+  #store{
+    position: fixed;
+    top: 25;
+    left: 25;
+  }
+
+  #spool{
+    position: fixed;
+    bottom: 25;
+    left: 25;
+  }
+
+  #text {
+    position: relative;
+    top: 25;
+    left:500;
+  }
