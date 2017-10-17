@@ -30,7 +30,7 @@ allAbout.innerHTML += `
 for (let j = 0; j < aboutLocal.locations.length; j++) {
         let all = aboutLocal.locations[j]
         allLocation.innerHTML += `
-        ${all.url} <img src="${all.img}" width="200px"></a>
+        ${all.url} <img class="card-img" src="${all.img}" width="200px"></a>
         <p>${all.name}</p>
         <p>${all.address}</p>
         <p>${all.number}</p>
