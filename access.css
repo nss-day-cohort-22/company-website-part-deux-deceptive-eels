@@ -41,6 +41,7 @@
 .pagination {
     text-align: center;
     font-size: 2em;
+    cursor: default;
 }
 
 .pagination a  {
