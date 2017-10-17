@@ -32,4 +32,8 @@
     padding-right: 5px;
     text-shadow: 0 0 3px rgba(255, 255, 255, 0.774); 
     color: white;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+
 }
