@@ -17,8 +17,10 @@ var accBtn = document.getElementById("accessory");
 var localBtn = document.getElementById("store");
 // Get the button that opens the safety modal
 var warningBtn = document.getElementById("warning");
-// Get the button that opens the safety modal
+// Get the button that opens the spool modal
 var spoolBtn = document.getElementById("spool");
+// Get the modal contents
+let bubbleEle = document.getElementById("bubble")
 
 // Get the modal contents
 const bubbleElement = document.getElementById("bubble")
@@ -26,25 +28,30 @@ const bubbleElement = document.getElementById("bubble")
 
 // When the user clicks on the button, open the modal 
 accBtn.onclick = function() {
-    modal.style.display = "block";
+	bubbleEle.innerHTML = ``
+
+	modal.style.display = "block";
     loadAccessPage(0);
 }
 
 
 // When the user clicks on the button, open the modal 
 localBtn.onclick = function() {
+	bubbleEle.innerHTML = ``
     modal.style.display = "block";
     loadBlankPage()
 }
 
 // When the user clicks on the button, open the modal 
 warningBtn.onclick = function() {
+	bubbleEle.innerHTML = ``
 	modal.style.display = "block";
 	loadSafety()
 }
 
 // When the user clicks on the button, open the modal 
 spoolBtn.onclick = function() {
+	bubbleEle.innerHTML = ``
 	modal.style.display = "block";
 	loadSpoolPage()
 }
@@ -52,6 +59,7 @@ spoolBtn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
+	bubbleEle.innerHTML = ``
 	modal.style.display = "none";
 	clearElement(bubbleElement)
 }
