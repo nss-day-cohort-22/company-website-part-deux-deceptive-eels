@@ -5,7 +5,7 @@ const allAbout = document.getElementsByClassName("about")[0]
 const allLocation = document.getElementsByClassName("locations")[0]
 
 allAbout.innerHTML += `
-    <p>${aboutLocal.about.title}</p>
+    <h2>${aboutLocal.about.title}</h2>
     <p>${aboutLocal.about.history}</p>
 `
 
