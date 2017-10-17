@@ -44,6 +44,7 @@ accessEl.innerHTML += `<article class=random-sentence> <p>${sentence()}</p> </ar
 
 
     }
+    bubble.innerHTML += `<div class="pag-bar">`
     switch(loopNumber){
         case 0: bubble.innerHTML += `
         <div class="pagination">
@@ -108,6 +109,7 @@ accessEl.innerHTML += `<article class=random-sentence> <p>${sentence()}</p> </ar
         `
         break
 }
+bubble.innerHTML += `</div>`
     
 }
 
