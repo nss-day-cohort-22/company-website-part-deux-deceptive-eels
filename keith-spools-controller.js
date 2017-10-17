@@ -9,7 +9,7 @@ function loadSpoolPage(){
         <p>${currentType.Name}</p>
         <p>${currentType.Price}</p>
         <p>${currentType.Info}</p>    
-        <p>${currentType.Image} </p>
+        <p class="image">${currentType.Image} </p>
         <p></p>
         `
     }

@@ -3,7 +3,6 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
     left: 0;
 	top: 0;
 
@@ -11,22 +10,23 @@
 	/* THIS SECTION NEEDS SOME FIDDLING TO MAKE THE CHAT BUBBLE LOOK RIGHT */
 
 	margin: 5%;
-    width: 90%; /* Full width */
-	height: 65%; /* Full height */
+    width: 90%;
+	height: 85%;
 
 	/* END OF FIDDLE SECTION */
 
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
+    background-color: rgba(0, 0, 30, 0); /* Black w/ opacity */
 }
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    background: linear-gradient(to bottom, hotpink, black);
+    margin: auto; /* 15% from the top and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 100%; /* Could be more or less, depending on screen size */
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
 /* The Close Button */
@@ -48,6 +48,7 @@ body {
   background: url("/imgs/background_pool.jpg");
   background-repeat:no-repeat;
   background-size:100% 100vh;
+  font-family: "Verdana", Times, serif;
 }
 
 #warning{
@@ -82,4 +83,7 @@ right: 25;
   #spools{
 	  image-orientation: center;
 	  font-size: 10rem;
+  }
+  .image{
+      margin-left: 5%;
   }

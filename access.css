@@ -44,7 +44,7 @@
 }
 
 .pagination a  {
-    text-decoration: underline black;
+    text-decoration: underline white;
 }
 .pagination .active {
    text-decoration: none; 
