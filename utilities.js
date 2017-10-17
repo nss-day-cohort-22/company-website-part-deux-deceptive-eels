@@ -31,7 +31,8 @@ accBtn.onclick = function() {
 
 // When the user clicks on the button, open the modal 
 localBtn.onclick = function() {
-	modal.style.display = "block";
+    modal.style.display = "block";
+    loadBlankPage()
 }
 
 // When the user clicks on the button, open the modal 
