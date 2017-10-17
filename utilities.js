@@ -24,8 +24,10 @@ const bubbleElement = document.getElementById("bubble")
 
 // When the user clicks on the button, open the modal 
 accBtn.onclick = function() {
-	modal.style.display = "block";
+    modal.style.display = "block";
+    loadAccessPage(0);
 }
+
 
 // When the user clicks on the button, open the modal 
 localBtn.onclick = function() {
