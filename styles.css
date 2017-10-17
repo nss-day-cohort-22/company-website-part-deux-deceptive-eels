@@ -80,7 +80,6 @@ right: 25;
     left: 40%;
   }
   #spools{
-	  color: magenta;
-	  text-align: center;
+	  image-orientation: center;
 	  font-size: 10rem;
   }
