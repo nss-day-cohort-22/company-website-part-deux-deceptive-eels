@@ -37,3 +37,21 @@
     top: 0;
 
 }
+
+.pagination {
+    text-align: center;
+    font-size: 2em;
+}
+
+.pagination a  {
+    text-decoration: underline black;
+}
+.pagination .active {
+   text-decoration: none; 
+}
+
+.pagination .arrow {
+    text-decoration: none;
+}
+
+

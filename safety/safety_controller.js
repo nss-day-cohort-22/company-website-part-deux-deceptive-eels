@@ -1,8 +1,6 @@
 
 const selectElem = document.getElementById("bubble");
 
-selectElem.innerHTML= `<button type="button" onclick="loadSafety()" >Clicky</button>`
-
 
 const loadSafety = () =>{
   const pullSafety = JSON.parse(localStorage.getItem("safety"))

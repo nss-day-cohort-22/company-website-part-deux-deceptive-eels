@@ -56,52 +56,52 @@ accessEl.innerHTML += `<article class=random-sentence> <p>${sentence()}</p> </ar
         <a onclick="loadAccessPage(8)" >3</a>
         <a onclick="loadAccessPage(12)" >4</a>
         <a onclick="loadAccessPage(16)" >5</a>
-        <a onclick="loadAccessPage(4)" >&rsaquo;</a>
+        <a onclick="loadAccessPage(4)" class="arrow" >&rsaquo;</a>
       </div>
         `
         break
 
         case 4: accessEl.innerHTML += `
         <div class="pagination">
-        <a onclick="loadAccessPage(0)" >&lsaquo;</a>
+        <a onclick="loadAccessPage(0)" class="arrow" >&lsaquo;</a>
         <a onclick="loadAccessPage(0)" >1</a>
         <a class="active">2</a>
         <a onclick="loadAccessPage(8)" >3</a>
         <a onclick="loadAccessPage(12)" >4</a>
         <a onclick="loadAccessPage(16)" >5</a>
-        <a onclick="loadAccessPage(8)" >&rsaquo;</a>
+        <a onclick="loadAccessPage(8)" class="arrow" >&rsaquo;</a>
       </div> `
       break
 
         case 8: accessEl.innerHTML +=  `
         <div class="pagination">
-        <a onclick="loadAccessPage(4)" >&lsaquo;</a>
+        <a onclick="loadAccessPage(4)" class="arrow" >&lsaquo;</a>
         <a onclick="loadAccessPage(0)" >1</a>
         <a onclick="loadAccessPage(4)" >2</a>
         <a class="active">3</a>
         <a onclick="loadAccessPage(12)" >4</a>
         <a onclick="loadAccessPage(16)" >5</a>
-        <a onclick="loadAccessPage(12)" >&rsaquo;</a>
+        <a onclick="loadAccessPage(12)" class="arrow" >&rsaquo;</a>
       </div>
         `
         break
 
         case 12: accessEl.innerHTML += `
         <div class="pagination">
-        <a onclick="loadAccessPage(8)" >&lsaquo;</a>
+        <a onclick="loadAccessPage(8)" class="arrow" >&lsaquo;</a>
         <a onclick="loadAccessPage(0)" >1</a>
         <a onclick="loadAccessPage(4)" >2</a>
         <a onclick="loadAccessPage(8)" >3</a>
         <a class="active">4</a>
         <a onclick="loadAccessPage(16)" >5</a>
-        <a onclick="loadAccessPage(16)" >&rsaquo;</a>
+        <a onclick="loadAccessPage(16)" class="arrow" >&rsaquo;</a>
       </div>
         `
         break 
 
         case 16: accessEl.innerHTML += `
         <div class="pagination">
-        <a onclick="loadAccessPage(12)" >&lsaquo;</a>
+        <a onclick="loadAccessPage(12)" class="arrow" >&lsaquo;</a>
         <a onclick="loadAccessPage(0)" >1</a>
         <a onclick="loadAccessPage(4)" >2</a>
         <a onclick="loadAccessPage(8)" >3</a>
