@@ -2,22 +2,6 @@ function clearElement(htmlElement) {
 	htmlElement.innerHTML = ""	
 }
 
-function makeBubble() {
-	let ele = document.getElementById("bubble")
-
-	ele.innerHTML = `
-	<div id="subBubble">
-	
-	</div>
-	`	
-}
-
-function clearBubble() {
-	let ele = document.getElementById("bubble")
-	
-	ele.innerHTML = ""
-	
-}
 
 
 var modal = document.getElementById('myModal');
@@ -27,12 +11,26 @@ var modal = document.getElementById('myModal');
 var span = document.getElementsByClassName("close")[0];
 
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+// Get the button that opens the accessory modal
+var accBtn = document.getElementById("accessory");
+// Get the button that opens the location modal
+var localBtn = document.getElementById("store");
+// Get the button that opens the safety modal
+var warningBtn = document.getElementById("warning");
 
 
 // When the user clicks on the button, open the modal 
-btn.onclick = function() {
+accBtn.onclick = function() {
+	modal.style.display = "block";
+}
+
+// When the user clicks on the button, open the modal 
+localBtn.onclick = function() {
+	modal.style.display = "block";
+}
+
+// When the user clicks on the button, open the modal 
+warningBtn.onclick = function() {
 	modal.style.display = "block";
 }
 

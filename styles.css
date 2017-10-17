@@ -1,3 +1,4 @@
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -10,8 +11,8 @@
 	/* THIS SECTION NEEDS SOME FIDDLING TO MAKE THE CHAT BUBBLE LOOK RIGHT */
 
 	margin: 5%;
-    width: 70%; /* Full width */
-	height: 55%; /* Full height */
+    width: 90%; /* Full width */
+	height: 65%; /* Full height */
 
 	/* END OF FIDDLE SECTION */
 
@@ -42,3 +43,44 @@
     text-decoration: none;
     cursor: pointer;
 }
+body {
+  position: relative;
+  background: url("http://pink-decor.com/wp-content/uploads/2016/10/Remarkable-Pink-Swimming-Pool-Nice-Inspirational-Home-Decorating-with-Pink-Swimming-Pool.jpg");
+  background-repeat:no-repeat;
+  background-size:100% 100vh;
+}
+
+#warning{
+position: fixed;
+bottom: 25;
+right: 25;
+}
+
+#accessory{
+  position: fixed;
+  top: 25;
+  right: 25;
+  }
+
+  #store{
+    position: fixed;
+    top: 25;
+    left: 25;
+  }
+
+  #spool{
+    position: fixed;
+    bottom: 25;
+    left: 25;
+  }
+
+  #text {
+    position: center;
+    top: 25;
+    left: 40%;
+  }
+  #spools{
+	  color: magenta;
+	  text-align: center;
+	  font-size: 10rem;
+  }
