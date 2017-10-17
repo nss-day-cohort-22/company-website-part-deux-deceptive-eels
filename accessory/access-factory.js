@@ -45,7 +45,7 @@ const dogHouse = {
 
 const waterNoodle = {
     "name": "Water Noodle",
-    "picture": "acessory/waternoodle.jpg",
+    "picture": "accessory/waternoodle.jpg",
     "price" : "$19.99",
     "description" : "Enjoy this beautiful water noodle to try in your Spool!"
 
@@ -108,7 +108,7 @@ const waterShorts = {
 
 const waterShirt = {
     "name": "Water Shirt",
-    "picture": "accessory/watersproofshirt.jpg",
+    "picture": "accessory/waterproofshirt.jpg",
     "price": "$159.99",
     "description": "Slide down our awesome water slide while eating our water proof pizza!"
 }
