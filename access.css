@@ -23,7 +23,7 @@
 /* Random Sentence Generator */
 
 .random-sentence {
-    float:right; 
+    /* float:right;  */
     border: 1px solid black; 
     background: lightblue;
     margin-bottom: 200px;

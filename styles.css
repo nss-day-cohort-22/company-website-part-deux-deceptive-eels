@@ -27,6 +27,7 @@
     width: 100%; /* Could be more or less, depending on screen size */
     color: white;
     text-shadow: 1px 1px black;
+    text-align: center;
 }
 
 /* The Close Button */
@@ -35,6 +36,9 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+    z-index: 3;
+    position: sticky;
+    top: 0;
 }
 
 .close:hover,
