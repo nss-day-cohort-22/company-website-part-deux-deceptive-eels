@@ -18,6 +18,9 @@ var localBtn = document.getElementById("store");
 // Get the button that opens the safety modal
 var warningBtn = document.getElementById("warning");
 
+// Get the modal contents
+const bubbleElement = document.getElementById("bubble")
+
 
 // When the user clicks on the button, open the modal 
 accBtn.onclick = function() {
@@ -39,7 +42,8 @@ warningBtn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
+	modal.style.display = "none";
+	clearElement(bubbleElement)
 }
 
 // When the user clicks anywhere outside of the modal, close it

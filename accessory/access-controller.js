@@ -14,6 +14,8 @@ function loadAccessPage (loopNumber) {
 
 const accessEl = document.getElementById("bubble")
 
+clearElement(accessEl);
+
 //Get sentence info and parse it into a string
 /*const accessSentence = JSON.parse(localStorage.getItem("sentenceArray"))
 const sentenceEl = document.getElementsByClassName("productList")[0] */
@@ -44,72 +46,72 @@ accessEl.innerHTML += `<article class=random-sentence> <p>${sentence()}</p> </ar
 
 
     }
-    bubble.innerHTML += `<div class="pag-bar">`
+    accessEl.innerHTML += `<div class="pag-bar">`
     switch(loopNumber){
-        case 0: bubble.innerHTML += `
+        case 0: accessEl.innerHTML += `
         <div class="pagination">
         
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">&rsaquo;</a>
+        <a class="active">1</a>
+        <a onclick="loadAccessPage(4)" >2</a>
+        <a onclick="loadAccessPage(8)" >3</a>
+        <a onclick="loadAccessPage(12)" >4</a>
+        <a onclick="loadAccessPage(16)" >5</a>
+        <a onclick="loadAccessPage(4)" >&rsaquo;</a>
       </div>
         `
         break
 
-        case 4: bubble.innerHTML += `
+        case 4: accessEl.innerHTML += `
         <div class="pagination">
-        <a href="#">&lsaquo;</a>
-        <a href="#">1</a>
-        <a href="#" class="active">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">&rsaquo;</a>
+        <a onclick="loadAccessPage(0)" >&lsaquo;</a>
+        <a onclick="loadAccessPage(0)" >1</a>
+        <a class="active">2</a>
+        <a onclick="loadAccessPage(8)" >3</a>
+        <a onclick="loadAccessPage(12)" >4</a>
+        <a onclick="loadAccessPage(16)" >5</a>
+        <a onclick="loadAccessPage(8)" >&rsaquo;</a>
       </div> `
       break
 
-        case 8: bubble.innerHTML +=  `
+        case 8: accessEl.innerHTML +=  `
         <div class="pagination">
-        <a href="#">&lsaquo;</a>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#" class="active">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">&rsaquo;</a>
+        <a onclick="loadAccessPage(4)" >&lsaquo;</a>
+        <a onclick="loadAccessPage(0)" >1</a>
+        <a onclick="loadAccessPage(4)" >2</a>
+        <a class="active">3</a>
+        <a onclick="loadAccessPage(12)" >4</a>
+        <a onclick="loadAccessPage(16)" >5</a>
+        <a onclick="loadAccessPage(12)" >&rsaquo;</a>
       </div>
         `
         break
 
-        case 12: bubble.innerHTML += `
+        case 12: accessEl.innerHTML += `
         <div class="pagination">
-        <a href="#">&lsaquo;</a>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#" class="active">4</a>
-        <a href="#">5</a>
-        <a href="#">&rsaquo;</a>
+        <a onclick="loadAccessPage(8)" >&lsaquo;</a>
+        <a onclick="loadAccessPage(0)" >1</a>
+        <a onclick="loadAccessPage(4)" >2</a>
+        <a onclick="loadAccessPage(8)" >3</a>
+        <a class="active">4</a>
+        <a onclick="loadAccessPage(16)" >5</a>
+        <a onclick="loadAccessPage(16)" >&rsaquo;</a>
       </div>
         `
         break 
 
-        case 16: bubble.innerHTML += `
+        case 16: accessEl.innerHTML += `
         <div class="pagination">
-        <a href="#">&lsaquo;</a>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#" class="active">5</a>
+        <a onclick="loadAccessPage(12)" >&lsaquo;</a>
+        <a onclick="loadAccessPage(0)" >1</a>
+        <a onclick="loadAccessPage(4)" >2</a>
+        <a onclick="loadAccessPage(8)" >3</a>
+        <a onclick="loadAccessPage(12)" >4</a>
+        <a class="active">5</a>
       </div>
         `
         break
 }
-bubble.innerHTML += `</div>`
+accessEl.innerHTML += `</div>`
     
 }
 
