@@ -14,8 +14,9 @@ function sentence () {
     let random1 = Math.floor(Math.random() * 4)
     let random2 = Math.floor(Math.random() * 4)
     let random3 = Math.floor(Math.random() * 4)
-    let content = interjection[random1] + noun[random2]+ " " + backSentence[random3];
+    let content =   interjection[random1] + noun[random2]+ " " + backSentence[random3];
     console.log(content)
+    return content
 
 }
 sentence();

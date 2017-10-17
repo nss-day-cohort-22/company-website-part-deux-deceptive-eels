@@ -1,4 +1,5 @@
-// function loadAcessPage {}
+//function to use on main index.html page
+function loadAcessPage () {
 
 //Alert box for buy button
 function myAccessFunction(){
@@ -11,27 +12,38 @@ const accessParse = JSON.parse(localStorage.getItem("productList"))
 
 const accessEl = document.getElementsByClassName("productList")[0]
 
-// For loop to iterate through the database and spit out the info 
+//Get sentence info and parse it into a string
+/*const accessSentence = JSON.parse(localStorage.getItem("sentenceArray"))
+const sentenceEl = document.getElementsByClassName("productList")[0] */
 
-for (var key in accessParse) {
-    const currentProduct = accessParse[key];
+
+
+//Random Sentence Generator into the DOM
+accessEl.innerHTML += `<article class=random-sentence> <p>${sentence()}</p> </article>`
+
+// For loop to iterate through the database and spit out the info  
+for (var accessKey in accessParse) {
+    const currentProduct = accessParse[accessKey];
     for (var index = 0; index < currentProduct.length; index++) {
-        var element = currentProduct[index];
+        var accessElement = currentProduct[index];
         
         accessEl.innerHTML +=  ` 
+        
         <section class="key">
         <div class="accessProduct">
-          <img class="card-img" src="${element.picture}" alt="Card image" height=300px width= 325px>
+          <img class="card-img" src="${accessElement.picture}" alt="Card image" height=300px width= 325px>
           <div class="card-body">
-            <h4 class="card-title">${element.name}</h4>
-            <p class="card-text">${element.price}</p>
-            <p class="card-text">${element.description}</p>
+            <h4 class="card-title">${accessElement.name}</h4>
+            <p class="card-text">${accessElement.price}</p>
+            <p class="card-text">${accessElement.description}</p>
             <button class="access-button" onclick="myAccessFunction()">Buy Now!</button>
           </div> 
-        </div>  
+         </div>  
         </section>       `
 
     }
 
+    
 }
 
+}
