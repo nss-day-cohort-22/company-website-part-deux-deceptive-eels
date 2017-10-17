@@ -1,5 +1,23 @@
 function loadBlankPage() {
 
+const bubs = document.getElementById("bubble")
+
+bubs.innerHTML = `
+    <article class="about">
+    <!-- the about info here from innerHTML -->
+
+    </article>
+
+    <article class="locations">
+    
+    <!-- the location info here from innerHTML -->
+
+    </article>
+`
+
+
+
+
 const aboutLocal = JSON.parse(localStorage.getItem("allList"))
 const allAbout = document.getElementsByClassName("about")[0]
 const allLocation = document.getElementsByClassName("locations")[0]
