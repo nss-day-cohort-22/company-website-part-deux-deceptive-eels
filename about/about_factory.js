@@ -5,21 +5,21 @@ const about = {
 
 const locations = [
     { 
-        "img": "nashville.png",
+        "img": "about/nashville.png",
         "name": "Nashville, TN",
         "address": "2273 Gunbarrel Rd, Nashville, TN",
         "number": "615-555-7612",
         "url": `<a href="https://www.google.com/maps/@36.1482537,-86.7799367,13.21z" target="_blank">`
     },
     { 
-        "img": "italy.png",
+        "img": "about/italy.png",
         "name": "Genoa, Italy",
         "address": "RT 40 Number 4",
         "number": "+0 8736372 890",
         "url": `<a href="https://www.google.com/maps/@44.364503,8.6514631,7.72z" target="_blank">`
     },
     { 
-        "img": "longbeach.png",
+        "img": "about/longbeach.png",
         "name": "Long Beach, CA",
         "address": "1402 Spool St",
         "number": "1-800-SOSPOOL",
