@@ -1,3 +1,5 @@
+
+// Clear the HTML contents of a given element
 function clearElement(htmlElement) {
 	htmlElement.innerHTML = ""	
 }
@@ -28,30 +30,30 @@ const bubbleElement = document.getElementById("bubble")
 
 // When the user clicks on the button, open the modal 
 accBtn.onclick = function() {
-	bubbleEle.innerHTML = ``
+	clearElement(bubbleElement)
 
 	modal.style.display = "block";
     loadAccessPage(0);
 }
 
 
-// When the user clicks on the button, open the modal 
+// When the user clicks on the button, clear and open the modal, then load page
 localBtn.onclick = function() {
-	bubbleEle.innerHTML = ``
+	clearElement(bubbleElement)
     modal.style.display = "block";
     loadBlankPage()
 }
 
-// When the user clicks on the button, open the modal 
+// When the user clicks on the button, clear and open the modal, then load page
 warningBtn.onclick = function() {
-	bubbleEle.innerHTML = ``
+	clearElement(bubbleElement)
 	modal.style.display = "block";
 	loadSafety()
 }
 
-// When the user clicks on the button, open the modal 
+// When the user clicks on the button, clear and open the modal, then load page
 spoolBtn.onclick = function() {
-	bubbleEle.innerHTML = ``
+	clearElement(bubbleElement)
 	modal.style.display = "block";
 	loadSpoolPage()
 }
@@ -59,7 +61,6 @@ spoolBtn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-	bubbleEle.innerHTML = ``
 	modal.style.display = "none";
 	clearElement(bubbleElement)
 }
